@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/custom_shape">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/_search"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_voice"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/imgCow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_toEndOf="@+id/imgCow" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="15dp"
+        android:textAlignment="center"
+        android:text="@string/about_cow"/>
+
+</LinearLayout>
